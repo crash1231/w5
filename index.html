@@ -54,12 +54,16 @@
   <div class="warning">Oops, server is down by CrasH !</div>
 
   <script>
-    fetch('https://ipinfo.io/json?token=YOUR_TOKEN') // سجّل في ipinfo.io لو ما اشتغل بدون توكن
-      .then(response => response.json())
-      .then(data => {
-        delete data.readme;
-        document.getElementById('ip').textContent = data.ip;
-        document.getElementById('ip-info').textContent = JSON.stringify(data, null, 2);
+    fetch(https://ipinfo.io/json?token=YOUR_TOKEN) // سجّل في ipinfo.io لو ما اشتغل بدون توكن
+  "ip": "77.137.79.50",
+  "city": "Tel Aviv",
+  "region": "Tel Aviv",
+  "country": "IL",
+  "loc": "32.0809,34.7806",
+  "org": "AS12849 Hot-Net internet services Ltd.",
+  "timezone": "Asia/Jerusalem",
+  "readme": "https://ipinfo.io/missingauth"
+
       })
       .catch(error => {
         document.getElementById('ip-info').textContent = 'Failed to load IP info.';
