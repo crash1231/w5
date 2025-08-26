@@ -1,12 +1,11 @@
-[crash.txt](https://github.com/user-attachments/files/21998187/crash.txt)
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hacked By</title>
+  <title>Hacked By [ CrasH ]</title>
   <style>
     body {
-      background: url('https://imgur.com/a/9rYz0H6') no-repeat center center fixed;
+      background: url('https://i.imgur.com/tWYrfEk.jpeg') no-repeat center center fixed;
       background-size: cover;
       font-family: monospace;
       color: white;
@@ -16,16 +15,21 @@
 
     h1 {
       color: red;
-      font-size: 2.5em;
+      font-size: 2.8em;
       text-shadow: 0 0 8px red, 0 0 15px red;
     }
 
     .info {
       margin-top: 20px;
-      font-size: 1.2em;
-      color: #00ffff;
-      text-shadow: 0 0 8px #00ffff, 0 0 15px #00ffff;
+      font-size: 1.1em;
+      color: orange;
       white-space: pre-wrap;
+    }
+
+    .ip {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: white;
     }
 
     .warning {
@@ -37,28 +41,33 @@
 
     img {
       width: 150px;
+      border-radius: 10px;
+    }
+
+    a {
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <img src="https://i.imgur.com/fnF3RrN.png" alt="Hacker Image"> <!-- عدّل الصورة حسب ما بدك -->
+  <img src="https://i.imgur.com/fnF3RrN.png" alt="Hacker Image">
   <h1>Hacked By [ CrasH ]</h1>
-  <p><b><a href="discord.gg/Ay1" style="color: orange; text-decoration: none;">Discord.gg/ayl</a></b></p>
-  <p style="color: red;">CrasH_ fucked the server</p>
+  <p><a href="https://discord.gg/ayl" target="_blank">Discord.gg/ayl</a></p>
+  <p style="color:red;">CrasH  fucked the server</p>
 
-  <p>Your IP Address:</p>
-  <p id="ip" style="font-weight: bold;"></p>
+  <p>Your IP Address: <span class="ip" id="ip"></span></p>
 
   <div class="info" id="ip-info">Loading IP info...</div>
 
-  <div class="warning">Oops, server is down by CrasH !</div>
+  <div class="warning">Oops, your server is down by CrasH !</div>
 
   <script>
-    fetch('https://ipinfo.io/json?token=YOUR_TOKEN') // سجّل في ipinfo.io لو ما اشتغل بدون توكن
+    fetch('https://ipinfo.io/json?token=YOUR_TOKEN') // أدخل توكنك هنا
       .then(response => response.json())
       .then(data => {
-        delete data.readme;
         document.getElementById('ip').textContent = data.ip;
         document.getElementById('ip-info').textContent = JSON.stringify(data, null, 2);
       })
