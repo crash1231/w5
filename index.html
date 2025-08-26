@@ -1,11 +1,12 @@
+[crash.txt](https://github.com/user-attachments/files/21998187/crash.txt)
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hacked By</crash >
+  <title>Hacked By</title>
   <style>
     body {
-      background: url(https://wallpapercave.com/wp/wp3284833.gif) no-repeat center center fixed;
+      background: url('https://imgur.com/a/9rYz0H6') no-repeat center center fixed;
       background-size: cover;
       font-family: monospace;
       color: white;
@@ -41,7 +42,7 @@
 </head>
 <body>
 
-  <img src="https://imgur.com/a/9rYz0H6" alt="Hacker Image"> <!-- عدّل الصورة حسب ما بدك -->
+  <img src="https://i.imgur.com/fnF3RrN.png" alt="Hacker Image"> <!-- عدّل الصورة حسب ما بدك -->
   <h1>Hacked By [ CrasH ]</h1>
   <p><b><a href="discord.gg/Ay1" style="color: orange; text-decoration: none;">Discord.gg/ayl</a></b></p>
   <p style="color: red;">CrasH_ fucked the server</p>
@@ -54,16 +55,12 @@
   <div class="warning">Oops, server is down by CrasH !</div>
 
   <script>
-    fetch(https://ipinfo.io/json?token=YOUR_TOKEN) // سجّل في ipinfo.io لو ما اشتغل بدون توكن
-  "ip": "77.137.79.50",
-  "city": "Tel Aviv",
-  "region": "Tel Aviv",
-  "country": "IL",
-  "loc": "32.0809,34.7806",
-  "org": "AS12849 Hot-Net internet services Ltd.",
-  "timezone": "Asia/Jerusalem",
-  "readme": "https://ipinfo.io/missingauth"
-
+    fetch('https://ipinfo.io/json?token=YOUR_TOKEN') // سجّل في ipinfo.io لو ما اشتغل بدون توكن
+      .then(response => response.json())
+      .then(data => {
+        delete data.readme;
+        document.getElementById('ip').textContent = data.ip;
+        document.getElementById('ip-info').textContent = JSON.stringify(data, null, 2);
       })
       .catch(error => {
         document.getElementById('ip-info').textContent = 'Failed to load IP info.';
