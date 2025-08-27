@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hacked By [ CrasH ]</title>
+  <title>Hacked By</title>
   <style>
     body {
-      background: url(https://cdn.discordapp.com/attachments/1380309637961875517/1410045014880555099/computer-screen-code-glitch-animation-gif-background-free-thumb57.gif?ex=68af9640&is=68ae44c0&hm=6cf3892d8ad1d24f23ed3849a20e1142a7fd29cd48babf8ad947f0facefaa6b1&') no-repeat center center fixed;
+      background: url('https://cdn.discordapp.com/attachments/1380309637961875517/1410110926824276223/200.gif?ex=68afd3a3&is=68ae8223&hm=86e2106ffd85656bbf256ab62135941300f620ebdbbacf2ef2ddc524208c1cbf&') no-repeat center center fixed;
       background-size: cover;
       font-family: monospace;
       color: white;
@@ -14,22 +14,18 @@
     }
 
     h1 {
-      color: red;
-      font-size: 2.8em;
-      text-shadow: 0 0 8px red, 0 0 15px red;
+      color: black;
+      font-size: 2.5em;
+      text-shadow: 0 0 8px red
+      , 0 0 15px red;
     }
 
     .info {
       margin-top: 20px;
-      font-size: 1.1em;
-      color: orange;
-      white-space: pre-wrap;
-    }
-
-    .ip {
       font-size: 1.2em;
-      font-weight: bold;
-      color: white;
+      color: #00ffff;
+      text-shadow: 0 0 8px #00ffff, 0 0 15px #00ffff;
+      white-space: pre-wrap;
     }
 
     .warning {
@@ -41,38 +37,26 @@
 
     img {
       width: 150px;
-      border-radius: 10px;
-    }
-
-    a {
-      color: orange;
-      text-decoration: none;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <img src="https://cdn.discordapp.com/attachments/1380309637961875517/1410045014880555099/computer-screen-code-glitch-animation-gif-background-free-thumb57.gif?ex=68af9640&is=68ae44c0&hm=6cf3892d8ad1d24f23ed3849a20e1142a7fd29cd48babf8ad947f0facefaa6b1&" alt="Hacker Image">
+  <img src="https://cdn.discordapp.com/emojis/1291869918794616902.webp?size=80" alt="Hacker Image"> <!-- عدّل الصورة حسب ما بدك -->
   <h1>Hacked By [ CrasH ]</h1>
-  <p><a href="https://discord.gg/ayl" target="_blank">Discord.gg/ayl</a></p>
-  <p style="color:red;">CrasH  fucked the server</p>
+  <p><b><a href="discord.gg/Ay1" style="color: orange; text-decoration: none;">Discord.gg/ayl</a></b></p>
+  <p style="color: red;">CrasH_ fucked the server</p>
 
-  <p>Your IP Address: <span class="ip" id="ip"></span></p>
+  <p>Your IP Address:</p>
+  <p id="ip" style="font-weight: bold;"></p>
 
   <div class="info" id="ip-info">Loading IP info...</div>
 
-  <div class="warning">Oops, your server is down by CrasH !</div>
+  <div class="warning">Oops, server is down by CrasH !</div>
 
   <script>
-    fetch('{
-  "status": 403,
-  "error": {
-    "title": "Unknown token",
-    "message": "Please ensure you've entered your token correctly. Refer to https://ipinfo.io/developers for details, or contact us at support@ipinfo.io for help"
-  }
-}') // أدخل توكنك هنا
-      {
+    fetch('https://ipinfo.io/json?token=YOUR_TOKEN') // سجّل في ipinfo.io لو ما اشتغل بدون توكن
+     
   "ip": "77.137.79.50",
   "city": "Tel Aviv",
   "region": "Tel Aviv",
@@ -81,7 +65,7 @@
   "org": "AS12849 Hot-Net internet services Ltd.",
   "timezone": "Asia/Jerusalem",
   "readme": "https://ipinfo.io/missingauth"
-}';
+}
       });
   </script>
 
