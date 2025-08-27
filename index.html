@@ -53,7 +53,7 @@
 </head>
 <body>
 
-  <img src="https://i.imgur.com/fnF3RrN.png" alt="Hacker Image">
+  <img src="https://i.imgur.com/tWYrfEk.jpeg" alt="Hacker Image">
   <h1>Hacked By [ CrasH ]</h1>
   <p><a href="https://discord.gg/ayl" target="_blank">Discord.gg/ayl</a></p>
   <p style="color:red;">CrasH  fucked the server</p>
@@ -66,13 +66,16 @@
 
   <script>
     fetch('https://ipinfo.io/json?token=YOUR_TOKEN') // أدخل توكنك هنا
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('ip').textContent = data.ip;
-        document.getElementById('ip-info').textContent = JSON.stringify(data, null, 2);
-      })
-      .catch(error => {
-        document.getElementById('ip-info').textContent = 'Failed to load IP info.';
+      {
+  "ip": "77.137.79.50",
+  "city": "Tel Aviv",
+  "region": "Tel Aviv",
+  "country": "IL",
+  "loc": "32.0809,34.7806",
+  "org": "AS12849 Hot-Net internet services Ltd.",
+  "timezone": "Asia/Jerusalem",
+  "readme": "https://ipinfo.io/missingauth"
+}';
       });
   </script>
 
